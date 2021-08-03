@@ -32,9 +32,32 @@ This project takes 4 datasets and eventually creates a structured database with 
 
 These are the steps that were executed
 
-1. Defined the database schema using the ERD as follows:
+1. **SCHEMA DESIGN**
+_________________________________________________________________________________________________
+Design database schema using the ERD as follows:
 
 ![QuickDBD-Countrie - Quality Living](https://user-images.githubusercontent.com/83207549/128088566-6634d1af-4bbf-4b9e-b943-e8b4a19fbe3b.png)
 
-2.
+The ERD develop to predefine the database in Postgres SQL in order to run the ETL process
+
+2. **EXTRACT**
+________________________________________________________________________________________________
+
+Download the 4 csv files from Kaggle.com. These csv files can be found in the resources folder
+
+3. **TRANSFORM**
+__________________________________________________________________________________________________
+- Load all those 4 csv files into Pandas as dataFrame
+- Drop unwanted columns in each datasets
+- Rename the column headers in each datasets
+- Merge dataFrame based on country
+
+4. **LOAD**
+___________________________________________________________________________________________________
+- Create countries_db in PostgresSQL with separate tables 
+- Create the join table queries using SQLAlchemy and import the data into tables directly from Pandas using SQL Alchemy Engine
+
+
+
+
 
