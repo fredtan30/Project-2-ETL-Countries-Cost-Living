@@ -10,7 +10,7 @@ Extracted 2020 countries living index datasets from Kaggle.com, created the sche
 
 **Team Members**
 
-- Phuong Han 
+- Ngoc Phuong Han 
 - Mohini Yadav 
 - Frederick Tan
 
